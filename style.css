@@ -165,7 +165,7 @@ body{
     background-color: white;
     border-radius: 18px;
     border: 1px thin gray;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+    box-shadow: 0 4px 8px 0 rgba(74, 28, 225, 0.4), 0 6px 20px 0 rgba(18, 125, 82, 0.5);
     padding: 10px;
     font-family: "ABeeZee", sans-serif;
     display: flex;
@@ -476,38 +476,184 @@ body{
 
     font-family: "ABeeZee", sans-serif;
 
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 #company-logo{
-    width: 1230px;
+    width: 1330px;
     height: 360px;
     margin: auto;
 
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-
-    grid-template-areas: "i1 i2 i3 i4 i5 i6"
-                            "i7 i8 i9 i10 i11 i12"
-                            "i13 i14 i16 i17 i18 i19";
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-#i1 {
-    grid-area: i1 ;
+.icon-row{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    height: 75px;
 }
-#i2 {
-    grid-area: i2 ;
+
+.icon{
+    height: 65px;
+    width: 168px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 10px 0 rgba(0, 0, 0, 0.10); */
+    border-radius: 8px;
+    margin: 30px;
 }
-#i3 {
-    grid-area: i3 ;
+
+#companies-button{
+    width: 276px;
+    height: 55px;
+    background-color: #2F80ED;
+    font-size: 20px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 80px;
+    margin-left: 600px;
+    font-weight: 500;
+    font-family: "ABeeZee", sans-serif;
+    font-style: italic;
+    text-transform: capitalize;
+
 }
-#i4 {
-    grid-area: i4 ;
+
+/* ----------------------------------------- */
+
+#student-wall{
+    height: 875px;
+    width: 100%;
 }
-#i5 {
-    grid-area: i5 ;
+
+#wall-title{
+    text-align: center;
+    width: 470px;
+    height: 95px;
+    margin: auto;
+    font-family: "ABeeZee", sans-serif ;
+    margin-top: 90px;
+    margin-bottom: 40px;
 }
-#i6 {
-    grid-area: i6 ;
+
+#students{
+    width: 1330px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
+
+.column{
+    height: 100%;
+    width: 398px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#f-left-1{
+    height: 261px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #D7D7D7;
+
+    padding: 15px;
+    box-sizing: border-box;
+}
+#f-left-2{
+    height: 309px;
+    width: 100%; 
+    border-radius: 8px;
+    border: 2px solid #D7D7D7;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#f-mid-1{
+    width: 100%;
+    height: 360px;
+    border-radius: 8px;
+    border: 2px solid #D7D7D7;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#f-mid-2{
+    width: 100%;
+    height: 215px;
+    border-radius: 8px;
+    border: 2px solid #D7D7D7;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#f-right-1{
+    width: 100%;
+    height: 310px;
+    border-radius: 8px;
+    border: 2px solid #D7D7D7;
+    padding: 15px;
+    box-sizing: border-box;
+}
+#f-right-2{
+    width: 100%;
+    height: 265px;
+    border-radius: 8px;
+    border: 2px solid #D7D7D7;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card-data{
+    width: 100%;
+    height: 64px;
+    padding-left: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.top-img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+
+.top-text{
+    width: 206px;
+    height: 50px;
+    font-family: "ABeeZee", sans-serif ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+.top-icon{
+    width: 42px; 
+    height: 30px;
+    border-radius: 50%;
+    background-color: #0077B5;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.card-para{
+    font-size: 16px;
+    color:#676767 ;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+/*  -------------------------------------------------------------  */
